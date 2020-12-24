@@ -1,0 +1,168 @@
+@import"../style/bootstrap/functions";
+@import "./helpers/variables";//自己設定的變數
+@import "../style/bootstrap/mixins";
+@import "../style/bootstrap/root";
+@import "../style/bootstrap/reboot";
+@import "../style/bootstrap/images";
+@import "../style/bootstrap/grid";
+@import "../style/bootstrap/tables";
+@import "../style/bootstrap/forms";
+@import "../style/bootstrap/buttons";
+@import "../style/bootstrap/transitions";
+@import "../style/bootstrap/dropdown";
+@import "../style/bootstrap/button-group";
+@import "../style/bootstrap/input-group";
+@import "../style/bootstrap/custom-forms";
+@import "../style/bootstrap/nav";
+
+@import "../style/bootstrap/card";
+@import "../style/bootstrap/pagination";
+@import "../style/bootstrap/alert";
+@import "../style/bootstrap/media";
+@import "../style/bootstrap/list-group";
+@import "../style/bootstrap/close";
+@import "../style/bootstrap/toasts";
+@import "../style/bootstrap/modal";
+@import "../style/bootstrap/popover";
+@import "../style/bootstrap/carousel";
+@import "../style/bootstrap/utilities";
+@import "../style/bootstrap/print";
+@import "../style/bootstrap/badge";
+//以下課製化
+@import "../style/base/base";
+@import "../style/components/navbar";
+@import "../style/components/banner";
+@import "../style/components/card";
+.search{
+    position: relative;
+    margin-top: -56px;
+    z-index: 999;
+}
+.border-bottom-warning{ 
+    border-bottom:2px solid #F1F0F8; 
+   &:hover{
+    border-bottom:2px solid #6C51E2;
+   }
+}
+.first{
+    border-bottom:2px solid #6C51E2;
+}
+   
+.subscribe {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  
+}
+.footer_link:hover{
+   color: red !important;
+   //沒吃到效果 不知道為什麼
+
+}
+//以上為index
+.result{
+    @media (max-width: 575px){
+        .btn-primary{
+            background: #F1F0F8;
+            border-color: #F1F0F8;
+        }
+    }
+    
+    .dropdown-toggle::after{
+        border-top: 0;
+    }
+} 
+
+@media (min-width: 768px){
+    .result .form-group {
+        width: 26.08695%;
+}
+@media (min-width: 992px){
+    .result .form-group {
+        width: 28.1081%;
+    }
+}
+}
+.serchresult{
+    .border-bottom{ 
+        border-bottom: 1px solid #ffff!important;
+    }
+    .form-control {
+        border: 0px;
+        padding:0 0;
+        background-color:#F1F0F8;
+       color:#00000099;
+       .star{
+        color: #000;
+    }
+   
+       
+       
+}
+    }
+    
+.filter__budget_item{
+    padding: 0.5rem;
+    width: 45%;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #00000099;
+    border-radius: 0.25rem;
+   
+}
+.modal-footer{
+   
+}
+.confirm {
+    bottom: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #000000de;
+   
+    color: #ffffff98;
+    border-radius: 0.5rem 0.5rem;
+}
+    .card-footer-body{
+        background-color: transparent;
+    }
+    .confirm__btnGroup{
+ display: flex;
+ 
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+    }
+    .filter-left{
+        .form-control{
+            border: 0px;
+            background-color: #F1F0F8;
+        }
+    }
+    .searchresult-main{
+        .card-img{
+            width: 225px;
+            height: 175px;
+        }
+    }
+.reserve{
+    .form-control:hover {
+        border: 1px solid #00000060;
+    }
+    .border-bottom{ 
+        border-bottom: 1px solid #ffffff !important;
+    }
+}
+ .success-form{
+    .form-control {
+        height: calc(2.5em + 0.75rem + 2px);        
+    }
+ } 
+ .remember{
+    .form-control {
+       border: 0px;        
+    }
+ }
+  
+
+
+

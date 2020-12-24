@@ -1,0 +1,545 @@
+---
+title: result
+layout: ./app/layout2.ejs
+engine: ejs
+current: index
+---
+<section class="bg-white-100 mb-5 mb-sm-6">
+  <div class="container result">
+    <div class="row">
+      <div class="col-12 d-flex align-items-center">
+        <div class="form-group w-100 mb-0 mr-2 mr-sm-4 pl-4 py-4 >
+                  
+                    <div class=" dropdown">
+          <button class="btn  btn-primary w-100 dropdown-toggle d-flex align-items-center" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons d-none d-md-block mr-2 mr-lg-3">
+              place
+            </span>
+            <div class="">
+              <h3 class="dropdown-toggle__title d-none d-sm-block text-ss text-left">
+                DESTINATION
+              </h3>
+              <span class="d-sm-none text-s">Bangkok</span>
+              <span class="d-none text-success d-sm-block fz-md-sm">Bangkok, Thailand</span>
+            </div>
+
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item d-flex " href="#">
+              <span class="material-icons mr-2 pt-1"> star star
+              </span>
+              <div class="flex-grow-1">
+                <h3>Bangkok</h3>
+                <p class="text-success">Thailand</p>
+              </div>
+            </a>
+            <a class="dropdown-item d-flex " href="#">
+              <span class="material-icons mr-2 pt-1"> star star
+              </span>
+              <div class="flex-grow-1">
+                <h3>Osakak</h3>
+                <p class="text-success">Japan</p>
+              </div>
+            </a>
+            <a class="dropdown-item d-flex " href="#">
+              <span class="material-icons mr-2 pt-1"> star star
+              </span>
+              <div class="flex-grow-1">
+                <h3>Roma</h3>
+                <p class="text-success">Italy</p>
+              </div>
+            </a>
+            <a class="dropdown-item d-flex " href="#">
+              <span class="material-icons mr-2 pt-1"> star star
+              </span>
+              <div class="flex-grow-1">
+                <h3>Paris</h3>
+                <p class="text-success">London</p>
+              </div>
+            </a>
+            <a class="dropdown-item d-flex " href="#">
+              <span class="material-icons mr-2 pt-1"> star star
+              </span>
+              <div class="flex-grow-1">
+                <h3>Reykjavik</h3>
+                <p class="text-success">Iceland</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="form-group w-100 mb-0 mr-2 mr-sm-4 pl-4 py-4  >
+                        <div class=" dropdown">
+          <button class="btn btn-primary  btn dropdown-toggle d-flex align-items-center  w-100 p-2" type="button"
+            id="dropdownDateButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="material-icons mr-2 d-none d-md-block">date_range</div>
+            <div class="dropdown-toggle__title   d-lg-none">
+              <h3 class="text-ss d-none d-md-block">
+                CHECK-IN / OUT
+              </h3>
+              <span class=" fz-md-sm d-block ">17 June - 19 June</span>
+            </div>
+
+            <div class="w-50 d-none d-md-none   d-lg-block">
+              <h3 class="text-dark text-ss">Check-in
+              </h3>
+              <span class="text-success text-s">17 June</span>
+            </div>
+            <div class="w-50 border-left d-none d-md-none   d-lg-block">
+              <h3 class="text-ss  ">Check-out</h3>
+              <span class="text-success text-s ">19 June</span>
+            </div>
+
+
+          </button>
+          <div class="dropdown-menu mt-1 border-0" aria-labelledby="dropdownDateButton">
+            <input type="date">
+          </div>
+        </div>
+        <div class="form-group w-100 mb-0 mr-2 mr-sm-4 pl-4 py-4 " style="">
+          <div class="dropdown mb-2 mb-lg-0 mr-lg-2  px-6  px-lg-0">
+            <button class="btn btn-primary btn dropdown-toggle d-flex align-items-center  w-100  " type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="material-icons mr-2">person</div>
+              <div class="text-left">
+                <h3 class="text-dark text-ss d-none d-sm-block">Guests
+                </h3>
+                <span class="text-s text-success">2 adults・1 room</span>
+              </div>
+
+            </button>
+            <div class="dropdown-menu mt-1 border-0" aria-labelledby="dropdownMenuButton">
+              <div class="d-flex justify-content-between px-2 align-items-center mb-1"><span>Adult</span>
+                <div class="numberGroup d-flex w-50 align-items-center">
+                  <div class="input-group-prepend">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">remove</div>
+                    </button>
+                  </div>
+                  <input class="form-control text-center border-0 p-md-0" type="text" placeholder="" value="2">
+                  <div class="input-group-append">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">add</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between px-2 align-items-center mb-1"><span>Child</span>
+                <div class="numberGroup d-flex w-50 align-items-center">
+                  <div class="input-group-prepend">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">remove</div>
+                    </button>
+                  </div>
+                  <input class="form-control text-center border-0 p-md-0" type="text" placeholder="" value="0">
+                  <div class="input-group-append">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">add</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between px-2 align-items-center mb-1"><span>Room</span>
+                <div class="numberGroup d-flex w-50 align-items-center">
+                  <div class="input-group-prepend">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">remove</div>
+                    </button>
+                  </div>
+                  <input class="form-control text-center border-0 p-md-0" type="text" placeholder="" value="1">
+                  <div class="input-group-append">
+                    <button class="btn p-md-0 d-flex" type="button">
+                      <div class="material-icons text-info">add</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center d-none d-sm-block" style="width:10%"><a
+            class="btn btn-warning font-weight-bold  py-4 px-8" href="result.html">search</a></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<main class="serchresult">
+  <div class="container">
+    <div class="row align-items-center ">
+      <div class="col-12 col-sm-4">
+        <h2 class="text-4xl mb-2 mb-sm-4 text-center text-sm-left ">Bangkok<sup class="text-warning">3,240</sup>
+        </h2>
+      </div>
+      <div class="col-12 col-sm-8">
+        <!-- 篩選 / 排序條件 -->
+        <div class="searchresult__condition d-flex ">
+          <button type="button" class="btn btn-primary w-50 d-block d-sm-none border-right font-weight-bold  "
+            data-toggle="modal" data-target="#exampleModal">
+            <span class="material-icons mr-2 align-bottom ">filter_list</span> FILTER
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> <span
+                      class="material-icons mr-2 align-bottom">filter_list</span> FILTER
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-white-100">
+                  <ul>
+                    <li class="mb-4 pb-4 border-bottom">
+                      <h3 class="mb-4">Deals</h3>
+                      <div class="form-control form-checkbox mb-2">
+                        <input type="checkbox" class="form-control-input font-weight-bold" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold " for="freeCancellation  ">Free
+                          cancellation</label>
+                      </div>
+                      <div class="form-control form-checkbox mb-2">
+                        <input type="checkbox" class="form-control-input font-weight-bold" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold" for="freeCancellation">No prepayment</label>
+                      </div>
+                      <div class="form-control form-checkbox ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold" for="freeCancellation">Special offers</label>
+                      </div>
+                    </li>
+                    <li class="mb-4 pb-4 border-bottom">
+                      <h3 class="mb-4">Popular filter</h3>
+                      <div class="form-control form-checkbox mb-2">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold" for="freeCancellation">Breakfast
+                          included</label>
+                      </div>
+                      <div class="form-control form-checkbox mb-2">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold" for="freeCancellation">Free Wi-Fi</label>
+                      </div>
+                      <div class="form-control form-checkbox ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <label class="form-control-label font-weight-bold" for="freeCancellation">Swimming pool</label>
+                      </div>
+                    </li>
+                    <li class="mb-4 pb-4 ">
+                      <h3 class="mb-4">Budget</h3>
+                      <input type="range" class="form-control-range" id="formControlRange">
+                      <div class="d-flex align-items-center filter__budget mt-2 pb-4 border-bottom">
+                        <div class="filter__budget_item mr-2">
+                          <p class="font-weight-bold">MIN PRICE</p>
+                          <span>TWD 800</span>
+                        </div>
+                        <div>-</div>
+                        <div class="filter__budget_item ml-2">
+                          <p class="font-weight-bold">MIN PRICE</p>
+                          <span>TWD 4,000+</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mb-4 pb-4 ">
+                      <h3>Rating</h3>
+                      <div class="form-control form-checkbox ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <span class="material-icons star">star</span>
+                        <span class="material-icons star">star</span>
+                        <span class="material-icons star">star</span>
+                        <span class="material-icons star">star</span>
+                        <span class="material-icons star">star</span>
+                        <span>5.0</span>
+                      </div>
+                      <div class="form-control form-checkbox     ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <span class="material-icons star ">star</span>
+                        <span class="material-icons star">star</span>
+                        <span class="material-icons star">star</span>
+
+                        <span class="material-icons star">star</span>
+                        <span>4.0</span>
+                      </div>
+                      <div class="form-control form-checkbox     ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <span class="material-icons star ">star</span>
+                        <span class="material-icons star">star</span>
+
+                        <span class="material-icons star">star</span>
+                        <span>3.0</span>
+                      </div>
+                      <div class="form-control form-checkbox     ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+                        <span class="material-icons star ">star</span>
+
+
+                        <span class="material-icons star">star</span>
+                        <span>2.0</span>
+                      </div>
+                      <div class="form-control form-checkbox     ">
+                        <input type="checkbox" class="form-control-input" id="freeCancellation">
+
+                        <span class="material-icons star">star</span>
+                        <span>1.0</span>
+                      </div>
+                      <input type="checkbox" class="form-control-input" id="freeCancellation">
+                      <span>Unrated</span>
+
+
+
+                    </li>
+                    <li class="mb-4 pb-4 ">
+                      <h3 class="mb-4">Stay Type</h3>
+                      <div class="form-control form-checkbox">
+                        <input type="checkbox" class="form-control-input" id="Hotel">
+                        <label class="form-control-label" for="Hotel">Hotel</label>
+                      </div>
+                      <div class="form-control form-checkbox">
+                        <input type="checkbox" class="form-control-input" id="Apartment">
+                        <label class="form-control-label" for="Apartment">Apartment</label>
+                      </div>
+                      <div class="form-control form-checkbox">
+                        <input type="checkbox" class="form-control-input" id="Unique">
+                        <label class="form-control-label" for="Unique">Unique</label>
+                      </div>
+                      <div class="form-control form-checkbox">
+                        <input type="checkbox" class="form-control-input" id="hostel">
+                        <label class="form-control-label" for="hostel">Hostel</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer confirm position-sticky py-0">
+                  <div class="card card-footer-body m-0 py-4 w-100">
+                    <h2 class="text-4xl text-primary mb-4">Find 1,245 results</h2>
+                    <div class="confirm__btnGroup">
+                      <button type="button" class="btn btn-outline-light w-48 py-4 " data-dismiss="modal">
+                        CLEAR
+                      </button>
+                      <button type="button" class="btn btn-warning w-48 py-4 ">FILTER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sort -->
+          <div class="btn-group w-50 d-block d-sm-none text-center">
+            <button type="button" id="dropdownSortButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" data-offset="0,0" class="btn btn-primary w-100 font-weight-bold  text-warning">
+              <span class="material-icons mr-2 text-warning  ">sort</span>SORT</button>
+            <div class="dropdown-menu  py-0 " aria-labelledby="dropdownSortButton">
+              <ul class="bg-white-100">
+                <li class="py-4 pl-4"> <a href="#">Recommended</a></li>
+
+                <li class="py-4 pl-4">
+                  <a href="#">Lowest Price</a>
+                </li>
+
+                <li class="py-4 pl-4">
+                  <a href="#">Best Value</a>
+                </li>
+
+                <li class="py-4 pl-4">
+                  <a href="#">Distance to City Center</a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!-- 375結束 -->
+          <ul class="d-none d-sm-flex">
+            <li class="pr-4 font-weight-bold "><a class="text-warning" href="#">Recommended</a></li>
+            <li class="pr-4 font-weight-bold  "><a href="#">Lowest Price</a></li>
+            <li class="pr-4 font-weight-bold  "><a href="#">Best value</a></li>
+            <li class=" font-weight-bold  "><a href="#">Distance to City Center</a></li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="container">
+  <div class="row">
+    <div class="filter-left d-none d-sm-block col-sm-4">
+      <ul class="bg-white-100 pl-4">
+        <li class="mb-4 pb-4 border-bottom">
+          <h3 class="mb-4">Deals</h3>
+          <div class="form-control form-checkbox mb-2">
+            <input type="checkbox" class="form-control-input font-weight-bold" id="freeCancellation">
+            <label class="form-control-label font-weight-bold " for="freeCancellation  ">Free
+              cancellation</label>
+          </div>
+          <div class="form-control form-checkbox mb-2">
+            <input type="checkbox" class="form-control-input font-weight-bold" id="freeCancellation">
+            <label class="form-control-label font-weight-bold" for="freeCancellation">No prepayment</label>
+          </div>
+          <div class="form-control form-checkbox ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <label class="form-control-label font-weight-bold" for="freeCancellation">Special offers</label>
+          </div>
+        </li>
+        <li class="mb-4 pb-4 border-bottom">
+          <h3 class="mb-4">Popular filter</h3>
+          <div class="form-control form-checkbox mb-2">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <label class="form-control-label font-weight-bold" for="freeCancellation">Breakfast
+              included</label>
+          </div>
+          <div class="form-control form-checkbox mb-2">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <label class="form-control-label font-weight-bold" for="freeCancellation">Free Wi-Fi</label>
+          </div>
+          <div class="form-control form-checkbox ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <label class="form-control-label font-weight-bold" for="freeCancellation">Swimming pool</label>
+          </div>
+        </li>
+        <li class="mb-4 pb-4 ">
+          <h3 class="mb-4">Budget</h3>
+          <input type="range" class="form-control-range" id="formControlRange">
+          <div class="d-flex align-items-center filter__budget mt-2 pb-4 border-bottom">
+            <div class="filter__budget_item mr-2">
+              <p class="font-weight-bold">MIN PRICE</p>
+              <span>TWD 800</span>
+            </div>
+            <div>-</div>
+            <div class="filter__budget_item ml-2">
+              <p class="font-weight-bold">MIN PRICE</p>
+              <span>TWD 4,000+</span>
+            </div>
+          </div>
+        </li>
+        <li class="mb-4 pb-4 ">
+          <h3>Rating</h3>
+          <div class="form-control form-checkbox ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <span class="material-icons star">star</span>
+            <span class="material-icons star">star</span>
+            <span class="material-icons star">star</span>
+            <span class="material-icons star">star</span>
+            <span class="material-icons star">star</span>
+            <span>5.0</span>
+          </div>
+          <div class="form-control form-checkbox     ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <span class="material-icons star ">star</span>
+            <span class="material-icons star">star</span>
+            <span class="material-icons star">star</span>
+
+            <span class="material-icons star">star</span>
+            <span>4.0</span>
+          </div>
+          <div class="form-control form-checkbox     ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <span class="material-icons star ">star</span>
+            <span class="material-icons star">star</span>
+
+            <span class="material-icons star">star</span>
+            <span>3.0</span>
+          </div>
+          <div class="form-control form-checkbox     ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+            <span class="material-icons star ">star</span>
+
+
+            <span class="material-icons star">star</span>
+            <span>2.0</span>
+          </div>
+          <div class="form-control form-checkbox     ">
+            <input type="checkbox" class="form-control-input" id="freeCancellation">
+
+            <span class="material-icons star">star</span>
+            <span>1.0</span>
+          </div>
+          <input type="checkbox" class="form-control-input" id="freeCancellation">
+          <span>Unrated</span>
+        </li>
+        <li class="mb-4 pb-4 ">
+          <h3 class="mb-4">Stay Type</h3>
+          <div class="form-control form-checkbox">
+            <input type="checkbox" class="form-control-input" id="Hotel">
+            <label class="form-control-label" for="Hotel">Hotel</label>
+          </div>
+          <div class="form-control form-checkbox">
+            <input type="checkbox" class="form-control-input" id="Apartment">
+            <label class="form-control-label" for="Apartment">Apartment</label>
+          </div>
+          <div class="form-control form-checkbox">
+            <input type="checkbox" class="form-control-input" id="Unique">
+            <label class="form-control-label" for="Unique">Unique</label>
+          </div>
+          <div class="form-control form-checkbox">
+            <input type="checkbox" class="form-control-input" id="hostel">
+            <label class="form-control-label" for="hostel">Hostel</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-sm-8">
+      <ul>
+        <li class="searchresult-main d-flex">
+          <div class="card mr-4">
+            <img class="card-img" src="./assets/images/Rachada1.jpg" alt="">
+          </div>
+          <div class="row p-1 p-sm-2 p-md-3 justify-content-between ">
+            <div class="col-12 col-sm-7 ">
+              <span class="text-ss text-warning">Rachada, Bangkok</span><span
+                class="text-ss d-block d-sm-none">・2kmfromcenter</span>
+              <h3 class="font-weight-bold text-m text-lg-2xl mb-4">Rachada Hotel</h3>
+              <p class="text-success font-weight-bold mb-1">Deluxe Double Room</p>
+              <p class="text-success mb-5">2 guests・1 bed (Queen size)</p>
+              <div class=" d-flex flex-column flex-sm-row
+                        "> <span class="badge badge-pill badge-white-100 text-success mr-1">Free cancellation</span>
+                <span class="badge badge-pill badge-white-100 text-success ">No prepayment</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+
+              <div class="d-flex align-items-center ">
+                <div>
+                  <span class="material-icons star align-bottom">star</span>
+                  <span class="material-icons star align-bottom">star</span>
+                  <span class="material-icons star align-bottom">star</span>
+                  <span class="material-icons star align-bottom">star</span>
+                </div>
+                <span class="text-s ml-1">4.0 (283)</span>
+              </div>
+              <div class="searchResult__price  justify-content-between align-items-center">
+                <span class="text-ss text-right d-block ">per night</span>
+                <h3 class="font-weight-bold text-m text-sm-2xl text-right">
+                  TWD 1,980
+                </h3>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+   
+
+  </div>
+</div>

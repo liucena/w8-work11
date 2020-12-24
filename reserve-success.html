@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    reserve-success
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-sm py-5 py-sm-6 align-items-center">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarhidemenu"
+              aria-controls="navbarhidemenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="material-icons">menu</span>
+            </button>
+            <!-- 隱藏漢堡選單 -->
+            <h1 class="logo py-5 py-sm-6"><a href="index.html">logo</a></h1>
+            <div class="collapse navbar-collapse  " id="navbarhidemenu">
+              <ul class="navbar-nav ml-auto align-items-sm-center">
+                <li class="nav-item  mr-sm-12 ">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <span class="material-icons align-bottom ">language</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">繁體中文</a>
+                      <a class="dropdown-item" href="#">簡體中文</a>
+                      <a class="dropdown-item" href="#">English</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item mr-sm-12 ">
+                  <a class="nav-link" href="">Sign up</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+            <!--xssss  -->
+            <button type="button" class="btn btn-primary d-block d-sm-none  font-weight-bold  " data-toggle="modal"
+              data-target="#exampleModal">
+              login
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0">
+                    <h2 class="modal-title" id="exampleModalLabel">
+                      <h1 class="logo   "><a href="index.html">logo</a></h1>
+                    </h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body ">
+                    <form class="success-form">
+                      <ul>
+                        <li class="mb-4 ">
+                          <h2 class=" text-4xl">Login</h2>
+
+                          <div class="form-group row ">
+                            <label for="email" class="col-sm-2 col-form-label">Email </label>
+                            <div class="col-sm-10 ">
+                              <input type="text" class="form-control d-block " id="email"
+                                placeholder="@eeeffe.gmail.com">
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-4 ">
+                          <div class="form-group row">
+                            <label for="passwords" class="col-sm-2 col-form-label">Passwords </label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="passwords" placeholder="請輸入密碼">
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </form>
+                    <p class="text-ss text-success">By signing in or creating an account, you agree with our </p>
+                    <p class="text-ss text-warning mb-4">Terms & Conditions and Privacy Statement</p>
+                    <form action="" class="remember">
+                      <div class="form-control form-checkbox mb-8  ">
+                        <input type="checkbox" class="form-control-input " id="freeCancellation "><span
+                          class="ml-1  ">Remember me</span>
+                      </div>
+                    </form>
+
+                    <button type="submit" class="btn btn-warning d-block w-100 py-4 mb-2 text-uppercase">Login</button>
+                    <p class="text-s text-success text-center">Don’t have an account yet? <a class="text-s text-warning"
+                        href="#">Sign up</a></p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar結束 -->
+
+  
+<div class="reserve-success main">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="font-weight-bold text-2xl text-sm-4xl pb-8 offset-lg-2">
+                    Reservation received!
+                </h2>
+            </div>
+        </div>
+      
+        <ul>
+            <li class="row mb-4">
+                <div class="col-4 col-sm-4 col-lg-2 offset-lg-2 font-weight-bold border-top ">Guest</div>
+                <div class="col-8 col-sm-8 col-lg-6  border-top ">David Lin</div>
+            </li>
+            <li class="row mb-4">
+                <div class="col-4 col-sm-4 col-lg-2  offset-lg-2 font-weight-bold  ">Email</div>
+                <div class="col-8 col-sm-8 col-lg-6    ">
+                    <a class="mr-4" href="mailto:david0520@mail.com.tw">david0520@mail.com.tw</a>
+                    <span class="text-warning text-ss ">Confirmation email sent to this address</span>
+                </div>
+            </li>
+            <li class="row mb-4">
+                <div class="col-4 col-sm-4 col-lg-2  offset-lg-2 font-weight-bold border-top  ">phone</div>
+                <div class="col-8 col-sm-8 col-lg-6  border-top  ">+886 9 32 456 789</div>
+            </li>
+          
+        </ul>
+      
+            <div class="row">
+                <div class="col-4 col-sm-4 col-lg-2 offset-lg-2 font-weight-bold border-top  ">room</div>
+                <div class="col-8 col-sm-8 col-lg-6  border-top  ">Deluxe Suite with Pool / 2 nights</div>
+            </div>
+              
+        
+        <ul>
+            <li class="row mb-4 ">
+                <div class="col-4 col-sm-4 col-lg-2 offset-lg-2 font-weight-bold  ">check-in</div>
+                <div class="col-8 col-sm-8 col-lg-6    ">Wednesday, 17 June 2020</div> 
+            </li>
+            <li class="row mb-4">
+                <div class="col-4 col-sm-4 col-lg-2 offset-lg-2 font-weight-bold border-top  ">check-out</div>
+                <div class="col-8 col-sm-8 col-lg-6 border-top  ">Friday, 19 June 2020</div>
+            </li>
+        </ul>
+        <div class="row mb-12 mb-sm-40 ">
+            <div class="col-12  col-lg-10   d-flex flex-column flex-sm-row justify-content-end  ">
+                <button type="button" class="btn btn-outline-warning text-uppercase py-4 px-8 mr-2 mb-2 mb-sm-0">edit reservation</button>
+                <button type="button" class="btn btn-warning text-uppercase py-4 px-8">Homepage</button>
+            </div>
+           
+        </div>
+
+    </div>
+    
+  
+</div>
+    <div class="footer">
+      <div class="container">
+        <div class="row justify-content-between align-items-center  py-4  
+         border-top">
+          <div class="col-12 col-sm-3  offset-lg-2  order-2 order-sm-1">
+            <p class="text-s text-center mb-4 mb-sm-0">© 2020 ALOHA, Inc. All rights reserved.</p>
+          </div>
+          <div class="col-12 col-sm-5 order-1 order-sm-2 mr-lg-auto">
+            <ul class="d-flex justify-content-center  ">
+              <li class="mr-4"><a class="text-s" href="#">FAQs</a></li>
+              <li class="mr-4"><a class="text-s" href="#">Terms of use</a></li>
+              <li><a class="text-s" href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="./assets/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

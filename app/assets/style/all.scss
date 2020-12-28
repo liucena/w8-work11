@@ -28,11 +28,14 @@
 @import "../style/bootstrap/utilities";
 @import "../style/bootstrap/print";
 @import "../style/bootstrap/badge";
+
 //以下課製化
 @import "../style/base/base";
 @import "../style/components/navbar";
 @import "../style/components/banner";
 @import "../style/components/card";
+@import "../style/components/login";
+@import "../style/components/member";
 .search{
     position: relative;
     margin-top: -56px;

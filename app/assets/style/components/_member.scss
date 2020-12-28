@@ -1,0 +1,45 @@
+.profile{
+    width: 24px;
+    height: 24px;
+}
+.booking{
+    .card-header{
+        background-color: #FFF;
+    }
+    .card-img{
+        height: 226px;
+    }
+    @media (min-width: 768px){
+        .card-img{
+            height: 175px;
+        }
+
+    }
+   
+}
+.user{
+.material-icons{
+    font-size: 14px;
+}
+}
+.user_details_phopo{
+    width: 64px;
+    height: 64px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.card{
+   
+.card-add {
+    font-size: 24px !important;
+    vertical-align: bottom;
+}
+}
+.card-body{
+    background:  #F1F0F8;
+    @media (min-width:767px){
+        background:  #FFF;
+    }
+}
+
+

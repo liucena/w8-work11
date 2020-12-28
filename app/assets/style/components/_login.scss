@@ -1,0 +1,31 @@
+.header{
+    z-index: 1;
+}
+.login{
+  height: 100vh;
+  margin-top: -72px;
+  padding-top: 72px;
+ 
+    .logo{
+        margin-bottom: 128px;
+    }
+}
+.login__background{
+    display: block;
+    position: absolute;
+  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.bg-cover{
+    position: absolute;
+    background-image: url(../../../assets/images/login.jpg);
+    
+     background-size: cover;
+     background-position: center;
+     height: 100%;
+ }
+ 

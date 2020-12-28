@@ -12127,6 +12127,66 @@ a {
 .detail .dropdown-toggle::after {
   border-top: 0; }
 
+.header {
+  z-index: 1; }
+
+.login {
+  height: 100vh;
+  margin-top: -72px;
+  padding-top: 72px; }
+  .login .logo {
+    margin-bottom: 128px; }
+
+.login__background {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+.bg-cover {
+  position: absolute;
+  background-image: url(../../../assets/images/login.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+
+.profile {
+  width: 24px;
+  height: 24px; }
+
+.booking .card-header {
+  background-color: #FFF; }
+
+.booking .card-img {
+  height: 226px; }
+
+@media (min-width: 768px) {
+  .booking .card-img {
+    height: 175px; } }
+
+.user .material-icons {
+  font-size: 14px; }
+
+.user_details_phopo {
+  width: 64px;
+  height: 64px;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.card .card-add {
+  font-size: 24px !important;
+  vertical-align: bottom; }
+
+.card-body {
+  background: #F1F0F8; }
+  @media (min-width: 767px) {
+    .card-body {
+      background: #FFF; } }
+
 .search {
   position: relative;
   margin-top: -56px;
